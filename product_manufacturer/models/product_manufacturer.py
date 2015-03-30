@@ -28,3 +28,12 @@ class ProductTemplate(models.Model):
     manufacturer_pname = fields.Char('Manufacturer Product Name')
     manufacturer_pref = fields.Char('Manufacturer Product Code')
     manufacturer_purl = fields.Char('Manufacturer Product URL')
+
+ProductTemplate()
+
+class resPartner(models.Model):
+    _inherit = 'res.partner'
+
+    manufacturer = fields.Boolean('Fabricante')
+    
+resPartner()
